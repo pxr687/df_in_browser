@@ -1,9 +1,14 @@
+import pandas as pd
 import webbrowser
 import os
 from time import sleep
 
 def show_df(df, name='temp', delete=True):
     """Show a pandas dataframe in browser, from command line."""
+    # coerce input to dataframe (user may often want to use it on a
+    # pandas series e.g. the output of groupby etc.)
+    df = pd.DataFrame(df)
+
     # convert the dataframe to HTML
     html_df = df.to_html()
 
