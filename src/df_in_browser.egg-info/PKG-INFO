@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: df-in-browser
+Version: 0.1.0
+Summary: A simple python package for rendering a Pandas DataFrame in a browser.
+Author: Peter Rush

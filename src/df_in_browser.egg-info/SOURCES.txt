@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/df_in_browser/__init__.py
+src/df_in_browser/df_in_browser.py
+src/df_in_browser.egg-info/PKG-INFO
+src/df_in_browser.egg-info/SOURCES.txt
+src/df_in_browser.egg-info/dependency_links.txt
+src/df_in_browser.egg-info/requires.txt
+src/df_in_browser.egg-info/top_level.txt
