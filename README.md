@@ -19,6 +19,6 @@ df =  pd.DataFrame({'score_1': np.random.normal(100, 10, 100),
 # show a DataFrame in a browser
 show_df(df)
 
-# show a Series derived from the dataframe in a browser
+# show a Series derived from the DataFrame in a browser
 show_df(df['score'])
 ```
