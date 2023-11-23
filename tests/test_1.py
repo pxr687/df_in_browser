@@ -1,6 +1,7 @@
 from df_in_browser import show_df
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
 
 def test_1():
     # create dataframe
