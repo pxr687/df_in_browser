@@ -4,7 +4,7 @@ A simple python package to display a pandas dataframe in a browser. It is
 intended to be run from the command line, for better visualisation of 
 dataframes than viewing within the terminal.
 
-Usage:
+Usage (in an ipython session):
 
 ```
 from df_in_browser import show_df
