@@ -14,7 +14,7 @@ def show_df(df, name='temp', delete=True):
     # display the dataframe in browswer
     webbrowser.open(file.name)
 
-    # delete the temporary file (after a pause to allow display in browswer)
+    # delete the temporary file (after a pause to allow display in browser)
     if delete == True:
         sleep(2)
         os.remove(name+'.html')
