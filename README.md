@@ -22,3 +22,11 @@ show_df(df)
 # show a Series derived from the DataFrame in a browser
 show_df(df['score_1'])
 ```
+This will give you output of the following form, in your default browser:
+
+![alt_text](https://github.com/pxr687/df_in_browser/blob/072d53b753f33392d6e40178161cda1405b41fcf/example.png)
+
+<br>
+
+And, for the second tab:
+![alt_text](https://github.com/pxr687/df_in_browser/blob/a083ddc3d88650268d79edbf9fe438bd736f891c/example_2.png)
