@@ -40,5 +40,5 @@ def show_df(df, name='temp', delete=True):
 
     # delete the temporary file (after a pause to allow display in browser)
     if delete == True:
-        sleep(2)
+        sleep(0.5)
         os.remove(name+'.html')
