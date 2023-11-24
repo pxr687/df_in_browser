@@ -12,8 +12,13 @@ def show_df(df, name='temp', delete=True):
         The DataFrame (or Series) to be displayed in the browser.
 
     name : str
-        The name of the temporary HTML file generated (contains the information
-        from the dataframe)
+        The name of the temporary HTML file generated (which contains the 
+        information from the dataframe). This is useful for keeping track of 
+        what the dataframe shows if you are opening multiple tabs showing
+        different dataframes. In most browsers the name of the temporary file
+        will be displayed on the tab that displays that particular dataframe.
+        You may want to use names like "control_group" etc. to make it clearer
+        what information is shown on the dataframe in that tab. 
 
     delete : Bool
         Boolean indicating whether to delete the temporary HTML file after
