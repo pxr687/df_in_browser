@@ -2,7 +2,8 @@
 
 A simple python package to display a pandas dataframe in a browser. It is
 intended to be run from the command line, for better visualisation of 
-dataframes than viewing within the terminal.
+dataframes than viewing within the terminal. (E.g. to allow viewing of 
+the entire dataframe, scrolling etc).
 
 Usage (in an ipython session):
 
