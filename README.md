@@ -1,6 +1,6 @@
 # df_in_browser
 
-A simple python package to display pandas dataframes and matplotlib/plotlt plots
+A simple python package to display pandas dataframes and matplotlib/plotly graphs
 in a browser. This package is intended to be used from the command line, for better
 visualisation of dataframes than viewing within the terminal. (E.g. to allow viewing of 
 the entire dataframe, scrolling etc). In addition, plots appear sequentially as 
