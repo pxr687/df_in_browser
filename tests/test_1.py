@@ -1,3 +1,4 @@
+# tests of dataframe-to-browser function(s)
 from show_in_browser import show_df
 import pandas as pd
 import numpy as np
