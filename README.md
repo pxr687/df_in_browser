@@ -70,7 +70,7 @@ commands):
 
 ![alt_text](example_tab_1.png)
 
-![alt_text](example_tab_2..png)
+![alt_text](example_tab_2.png)
 
 ![alt_text](example_tab_3.png)
 
