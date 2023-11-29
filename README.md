@@ -29,10 +29,10 @@ df = pd.DataFrame({'score_1': np.random.normal(100, 10, 100),
                 'score_3': np.random.normal(10, 2, 100)})
 
 # show a DataFrame in a browser
-show_df(df)
+show_df(df, name='Complete DataFrame') # name is optional
 
 # show a Series derived from the DataFrame in a browser
-show_df(df['score_1'])
+show_df(df['score_1'], name='A Single Column') # name is optional
 
 # ==============================================================================
 # SHOW MATPLOTLIB PLOTS IN THE BROWSER
@@ -42,13 +42,13 @@ show_df(df['score_1'])
 # 2D matplotlib plot
 plt.figure()
 plt.scatter(df['score_1'], df['score_2'])
-show_plt_plot()
+show_plt_plot(name='Matplotlib Scatterplot') # name is optional
 
 # 3D matplotlib plot
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.scatter(df['score_1'], df['score_2'], df['score_3'])
-show_plt_plot()
+show_plt_plot(name='Matplotlib 3D Scatterplot') # name is optional
 
 # ==============================================================================
 # SHOW PLOTLY PLOTS IN THE BROWSER
@@ -57,25 +57,25 @@ show_plt_plot()
 
 # 2D plotly plot
 fig = px.scatter(df, x='score_1', y='score_2')
-show_px_plot(fig)
+show_px_plot(fig, name='Plotly Scatterplot') # name is optional
 
 # 3D plotly plot
 fig = px.scatter_3d(df, x='score_1', y='score_2', z='score_3')
-show_px_plot(fig)
+show_px_plot(fig, name='Plotly 3D Scatterplot') # name is optional
 ```
 This code will give you output of the following form, in your default browser. 
 E.g. each dataframe or plot that you have selected will show in separate tabs
 in your default browser. (They will appear in the order in which you ran the
 commands):
 
-![alt_text](example1.png)
+![alt_text](example_tab_1.png)
 
-![alt_text](example2.png)
+![alt_text](example_tab_2..png)
 
-![alt_text](example3.png)
+![alt_text](example_tab_3.png)
 
-![alt_text](example4.png)
+![alt_text](example_tab_4.png)
 
-![alt_text](example5.png)
+![alt_text](example_tab_5.png)
 
-![alt_text](example6.png)
+![alt_text](example_tab_6.png)
