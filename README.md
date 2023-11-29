@@ -68,14 +68,14 @@ E.g. each dataframe or plot that you have selected will show in separate tabs
 in your default browser. (They will appear in the order in which you ran the
 commands):
 
-![alt_text](example_tab_1.png)
+![alt_text](example_tab1.png)
 
-![alt_text](example_tab_2.png)
+![alt_text](example_tab2.png)
 
-![alt_text](example_tab_3.png)
+![alt_text](example_tab3.png)
 
-![alt_text](example_tab_4.png)
+![alt_text](example_tab4.png)
 
-![alt_text](example_tab_5.png)
+![alt_text](example_tab5.png)
 
-![alt_text](example_tab_6.png)
+![alt_text](example_tab6.png)
