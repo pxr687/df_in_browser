@@ -64,9 +64,8 @@ fig = px.scatter_3d(df, x='score_1', y='score_2', z='score_3')
 show_px_plot(fig, name='Plotly 3D Scatterplot') # name is optional
 ```
 This code will give you output of the following form, in your default browser. 
-E.g. each dataframe or plot that you have selected will show in separate tabs
-in your default browser. (They will appear in the order in which you ran the
-commands):
+Each dataframe or plot that you have selected will show in separate tabs
+in your default browser. The dataframes and plots will appear in the order in which you ran the commands:
 
 ![alt_text](example_tab1.png)
 
