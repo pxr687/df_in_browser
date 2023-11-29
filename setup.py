@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="df_in_browser",
+    name="show_in_browser",
     version="0.1.0",
     author="Peter Rush",
     description="A simple python package for rendering a Pandas DataFrame in a browser.",
