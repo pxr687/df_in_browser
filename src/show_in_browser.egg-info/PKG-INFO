@@ -1,7 +1,5 @@
 Metadata-Version: 2.1
 Name: show-in-browser
 Version: 0.1.0
-Summary: A simple python package for rendering a Pandas DataFrame in a browser.
+Summary: A simple python package for rendering a Pandas DataFrames and matplotlib/plotly plots in a browser.
 Author: Peter Rush
-Requires-Dist: pandas
-Requires-Dist: aspose-words

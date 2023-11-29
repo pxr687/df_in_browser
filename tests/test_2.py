@@ -22,7 +22,7 @@ def test_plt_plot_3D():
     # create 3D scatterplot to show in browser
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
-    scatter = ax.scatter(df['score_1'], df['score_2'], df['score_3'])
+    ax.scatter(df['score_1'], df['score_2'], df['score_3'])
     show_plt_plot()
 
 def test_plt_plot_3D_interact():
@@ -33,5 +33,5 @@ def test_plt_plot_3D_interact():
     # create 3D scatterplot to interact with in browser
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')
-    scatter = ax.scatter(df['score_1'], df['score_2'], df['score_3'])
+    ax.scatter(df['score_1'], df['score_2'], df['score_3'])
     show_plt_plot(interact=True)
