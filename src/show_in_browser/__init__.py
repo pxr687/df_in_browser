@@ -1,4 +1,4 @@
-""" df_in_browser package
+""" show_in_browser package
 """
 
-from .df_in_browser import show_df
+from .show_in_browser import show_df
