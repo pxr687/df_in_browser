@@ -1,8 +1,9 @@
-import pandas as pd
-import webbrowser
-import os
+import pandas as _pd
+import webbrowser as _webbrowser
+import _os
 from time import sleep
-import aspose.words as aw
+import matplotlib.pyplot as _plt
+import aspose.words as _aw
 
 def show_df(df, name='temp', delete=True):
     """Show a pandas dataframe in browser, from command line.
@@ -27,7 +28,7 @@ def show_df(df, name='temp', delete=True):
     """
     # coerce input to dataframe (user may often want to use it on a
     # pandas series e.g. the output of groupby etc.)
-    df = pd.DataFrame(df)
+    df = _pd.DataFrame(df)
 
     # convert the dataframe to HTML
     html_df = df.to_html()
@@ -37,12 +38,14 @@ def show_df(df, name='temp', delete=True):
         file.write(html_df)
 
     # display the dataframe in browswer
-    webbrowser.open(file.name)
+    _webbrowser.open(file.name)
 
     # delete the temporary file (after a pause to allow display in browser)
     if delete == True:
         sleep(0.5)
-        os.remove(name+'.html')
+        _os.remove(name+'.html')
 
 
-def
+def show_plot(name="temp_plot.png"):
+    _plt.savefig(name)
+
