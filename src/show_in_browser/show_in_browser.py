@@ -2,6 +2,7 @@ import pandas as pd
 import webbrowser
 import os
 from time import sleep
+import aspose.words as aw
 
 def show_df(df, name='temp', delete=True):
     """Show a pandas dataframe in browser, from command line.
@@ -42,3 +43,6 @@ def show_df(df, name='temp', delete=True):
     if delete == True:
         sleep(0.5)
         os.remove(name+'.html')
+
+
+def
