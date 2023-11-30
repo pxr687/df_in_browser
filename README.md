@@ -10,7 +10,9 @@ The following code shows some example uses (in an ipython session):
 
 ```
 # import the show_in_browser functions as on the line below:
-from show_in_browser import show_df, show_plt_plot, show_px_plot
+# (alternatively you can use `import show_in_browser as sib` and then access the functions
+# with `sib.show_df()` etc.
+from show_in_browser import show_df, show_plt_plot, show_px_plot 
 
 # other imports for the demo script
 import pandas as pd
