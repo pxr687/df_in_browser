@@ -6,6 +6,8 @@ visualisation of dataframes than viewing within the terminal. (E.g. to allow vie
 the entire dataframe, scrolling etc). In addition, plots appear sequentially as 
 separate browser tabs, so they can be viewed in a deliberate sequence.
 
+To install use: `pip install show-in-browser`
+
 The following code shows some example uses (in an ipython session):
 
 ```
