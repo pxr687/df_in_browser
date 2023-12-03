@@ -81,15 +81,22 @@ def show_df(df, name='temp', decimal_places=3, delete=True, delete_pause=1):
             _os.remove(_os.path.realpath(name+'.html'))
 
 
-def show_plt_plot(name="temp_plot", delete=True, delete_pause=1,
-                  interact=False, fig=''):
+def show_plt_plot(fig=None, name="temp_plot", delete=True, delete_pause=1,
+                  interact=False):
     """Show a matplotlib.pyplot plot in the default browser, from the command
      line.
 
-     Works like plt.show() - run it after your plotting commands.
+     Works like plt.show() - run it after your plotting commands. Or, if you 
+     have saved your plot as a variable (e.g. called `my_plot`) then you can
+     pass it to this function using the argument `show_plt_plot(fig=my_plot)`.
 
     Parameters
     ----------
+
+    fig: matplotlib.figure.Figure
+        The matplotlib graph object which you want to open in a browser. 
+        If no figure is supplied, then the current figure will be shown.
+        Default is None.
 
     name : str
         The name of the temporary HTML file generated (which contains the 
@@ -104,6 +111,15 @@ def show_plt_plot(name="temp_plot", delete=True, delete_pause=1,
         You may want to change this if your browser is taking a long time
         to open the file (e.g. so it is getting deleted before it is shown).
         Default is 1 second. 
+    
+    interact : Bool
+        Set whether to display your matplotlib plot(s) interactively (e.g. so
+        you can rotate a 3D scatterplot). NOTE: we **strongly** recommend using
+        plotly if you want interactive plots - you will have to change the
+        matplotlib backend to 'WebAgg' if you want to use matplotlib. If using
+        matplotlib interactively, you should only run `show_plt_plot()` once
+        and all your plots will be shown in the same tab (e.g. you do not have
+        to run it for each separate plot). Default is False. 
 
     Example
     ----------
@@ -125,9 +141,17 @@ def show_plt_plot(name="temp_plot", delete=True, delete_pause=1,
     # show in browser
     show_plt_plot()  
     """
-    # if the plot is interactive (e.g. a 3D scatterplot)...
+    # if the `interact` argument is set to True...
     if interact == True:
 
+        # check that no figure object has been supplied (WebAgg backend
+        # does not support passing a figure object e.g. plt.show() will only 
+        # work with the currently open figure)
+        assert fig == None, """
+If using matplotlib interactively in a browser, you cannot supply 
+`show_plt_plot()` with a figure object. Only the currently open figure will be 
+displayed. Please remove the `fig` argument and try again.
+"""
         # get a record of the current matplotlib backend
         original_mpl_backend = _plt.get_backend()
 
@@ -158,6 +182,10 @@ matplotlib.use({original_mpl_backend})
 
     # if the plot is NOT interactive...
     if interact == False:
+
+        # set fig to be the current figure, if no fig argument is supplied
+        if fig == None:
+            fig = _plt.gcf()
         
         # store some filenames (png and html)
         name_png = name+".png"
@@ -168,6 +196,7 @@ matplotlib.use({original_mpl_backend})
         junk_name = name+".001.png" 
 
         # save the current figure
+        _plt.figure(fig)
         _plt.savefig(name_png)
 
         # create a temporary html file containing the figure
@@ -178,7 +207,7 @@ matplotlib.use({original_mpl_backend})
         # open the temporary html file, then close the matplotlib figure (to
         # avoid errors)
         _webbrowser.get().open('file://' + _os.path.realpath(name_html))
-        _plt.close()
+        _plt.close(fig)
 
         # delete the temporary file (after a pause to allow display in browser)
         if delete == True:
@@ -192,7 +221,8 @@ matplotlib.use({original_mpl_backend})
 def show_px_plot(fig, name="temp_plot", delete=True, delete_pause=1):
     """Show a plotly.express plot in the default browser, from the command line.
 
-    Works like plt.show() - run it after your plotting commands.
+    Works like plt.show(fig). E.g. save your plot as a variable (like `my_plot`) 
+    and then use `show_px_plot(fig=my_plot)`.
 
     Parameters
     ----------
