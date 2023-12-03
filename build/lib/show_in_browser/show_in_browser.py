@@ -207,7 +207,6 @@ matplotlib.use({original_mpl_backend})
         # open the temporary html file, then close the matplotlib figure (to
         # avoid errors)
         _webbrowser.get().open('file://' + _os.path.realpath(name_html))
-        _plt.close(fig)
 
         # delete the temporary file (after a pause to allow display in browser)
         if delete == True:

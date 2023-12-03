@@ -3,3 +3,4 @@ Name: show-in-browser
 Version: 0.1.0
 Summary: A simple python package for rendering a Pandas DataFrames and matplotlib/plotly plots in a browser.
 Author: Peter Rush
+License-File: LICENSE.txt

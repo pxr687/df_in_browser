@@ -53,6 +53,16 @@ ax.scatter(df['score_1'], df['score_2'], df['score_3'])
 show_plt_plot(name='Matplotlib 3D Scatterplot') # name is optional
 
 # ==============================================================================
+# SHOW MATPLOTLIB PLOTS IN THE BROWSER (IN SPECIFIC ORDER)
+
+# a new 2D matplotlib plot
+fig2 = plt.figure()
+plt.scatter(df['score_1']*-1, df['score_2'])
+
+show_plt_plot(fig, name='Matplotlib 3D Scatterplot 2') # name is optional
+show_plt_plot(fig2, name='Matplotlib 2D Scatterplot 2') # name is optional
+
+# ==============================================================================
 # SHOW PLOTLY PLOTS IN THE BROWSER
 # this section shows how to use the `show_px_plot()` function to display a
 # matplotlib plots in the browser
