@@ -6,6 +6,8 @@ visualisation of dataframes than viewing within the terminal. (E.g. to allow vie
 the entire dataframe, scrolling etc). In addition, plots appear sequentially as 
 separate browser tabs, so they can be viewed in a deliberate sequence.
 
+To install use: `pip install show-in-browser`
+
 The following code shows some example uses (in an ipython session):
 
 ```
@@ -51,16 +53,6 @@ fig = plt.figure()
 ax = fig.add_subplot(111, projection='3d')
 ax.scatter(df['score_1'], df['score_2'], df['score_3'])
 show_plt_plot(name='Matplotlib 3D Scatterplot') # name is optional
-
-# ==============================================================================
-# SHOW MATPLOTLIB PLOTS IN THE BROWSER (IN SPECIFIC ORDER)
-
-# a new 2D matplotlib plot
-fig2 = plt.figure()
-plt.scatter(df['score_1']*-1, df['score_2'])
-
-show_plt_plot(fig, name='Matplotlib 3D Scatterplot 2') # name is optional
-show_plt_plot(fig2, name='Matplotlib 2D Scatterplot 2') # name is optional
 
 # ==============================================================================
 # SHOW PLOTLY PLOTS IN THE BROWSER
