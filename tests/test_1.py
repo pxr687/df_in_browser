@@ -15,3 +15,6 @@ def test_show_df():
 
     # test with a Series
     show_df(df.groupby('name').mean())
+
+if __name__ == "__main__":
+    test_show_df()

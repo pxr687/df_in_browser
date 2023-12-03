@@ -35,3 +35,8 @@ def test_plt_plot_3D_interact():
     ax = fig.add_subplot(111, projection='3d')
     ax.scatter(df['score_1'], df['score_2'], df['score_3'])
     show_plt_plot(interact=True)
+
+if __name__ == "__main__":
+    test_plt_plot()
+    test_plt_plot_3D()  
+    test_plt_plot_3D_interact()

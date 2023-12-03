@@ -21,3 +21,7 @@ def test_px_plot_3D():
     fig = px.scatter_3d(df, x='score_1', y='score_2', z='score_3')
 
     show_px_plot(fig)
+
+if __name__ == "__main__":
+    test_px_plot()
+    test_px_plot_3D()
