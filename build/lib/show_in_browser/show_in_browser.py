@@ -1,7 +1,7 @@
 import pandas as _pd
 import webbrowser as _webbrowser
 import os as _os
-from time import sleep as _sleep
+from time import _sleep
 import matplotlib.pyplot as _plt
 import aspose.words as _aw
 import warnings as _warnings
