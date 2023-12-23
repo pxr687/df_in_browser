@@ -73,14 +73,14 @@ This code will give you output of the following form, in your default browser.
 Each dataframe or plot that you have selected will show in separate tabs
 in your default browser. The dataframes and plots will appear in the order in which you ran the commands:
 
-![alt_text](https://github.com/pxr687/show_in_browser/images/blob/main/example_tab1.png)
+![alt_text](https://github.com/pxr687/show_in_browser/blob/main/images/example_tab1.png)
 
-![alt_text](https://github.com/pxr687/show_in_browser/images/blob/main/example_tab2.png)
+![alt_text](https://github.com/pxr687/show_in_browser/blob/main/images/example_tab2.png)
 
-![alt_text](https://github.com/pxr687/show_in_browser/images/blob/main/example_tab3.png)
+![alt_text](https://github.com/pxr687/show_in_browser/blob/main/images/example_tab3.png)
 
-![alt_text](https://github.com/pxr687/show_in_browser/images/blob/main/example_tab4.png)
+![alt_text](https://github.com/pxr687/show_in_browser/blob/main/images/example_tab4.png)
 
-![alt_text](https://github.com/pxr687/show_in_browser/images/blob/main/example_tab5.png)
+![alt_text](https://github.com/pxr687/show_in_browser/blob/main/images/example_tab5.png)
 
-![alt_text](https://github.com/pxr687/show_in_browser/images/blob/main/example_tab6.png)
+![alt_text](https://github.com/pxr687/show_in_browser/blob/main/images/example_tab6.png)
