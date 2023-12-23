@@ -1,8 +1,7 @@
 import pandas as _pd
 import webbrowser as _webbrowser
 import os as _os
-from time import sleep
-import matplotlib as _mpl
+from time import _sleep
 import matplotlib.pyplot as _plt
 import aspose.words as _aw
 import warnings as _warnings
@@ -77,7 +76,7 @@ def show_df(df, name='temp', decimal_places=3, delete=True, delete_pause=1):
 
         # delete the temporary file (after a pause to allow display in browser)
         if delete == True:
-            sleep(delete_pause)
+            _sleep(delete_pause)
             _os.remove(_os.path.realpath(name+'.html'))
 
 
@@ -210,7 +209,7 @@ matplotlib.use({original_mpl_backend})
 
         # delete the temporary file (after a pause to allow display in browser)
         if delete == True:
-            sleep(delete_pause)
+            _sleep(delete_pause)
             _os.remove(_os.path.realpath(name_png))
             _os.remove(_os.path.realpath(name_html))
             if junk_name in _os.listdir():
@@ -265,5 +264,5 @@ def show_px_plot(fig, name="temp_plot", delete=True, delete_pause=1):
 
     # delete the temporary file (after a pause to allow display in browser)
     if delete == True:
-        sleep(delete_pause)
+        _sleep(delete_pause)
         _os.remove(_os.path.realpath(name_html))
