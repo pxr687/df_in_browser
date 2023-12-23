@@ -1,5 +1,7 @@
 # show_in_browser
 
+**Only works on Windows or Linux!**
+
 A simple python package to display pandas dataframes and matplotlib/plotly graphs
 in a browser. This package is intended to be used from the command line, for better
 visualisation of dataframes than viewing within the terminal. (E.g. to allow viewing of 

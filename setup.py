@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="show_in_browser",
-    version="0.1.2",
+    version="0.1.3",
     author="Peter Rush; Mircea-Andrei Radu",
     description="A simple python package for rendering a Pandas DataFrames and matplotlib/plotly plots in a browser.",
     long_description="Please see the README here: https://github.com/pxr687/show_in_browser",
@@ -14,4 +14,7 @@ setup(
     "pandas",
     "aspose-words"
     ],
+ classifiers=[
+    'Operating System :: POSIX :: Linux',
+    'Operating System :: Microsoft :: Windows']
 )
